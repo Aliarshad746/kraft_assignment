@@ -1,0 +1,33 @@
+{
+    "products": [{
+        "id" : 1,
+        "label" : "Iphone 13",
+        "price" : "80,000",
+        "currency" : "INR", 
+        "image_url" : "https://github.com/Aliarshad746/Proshop/blob/master/frontend/public/images/phone.jpg?raw=true"
+    },{
+        "id" : 2,
+        "label" : "Canon Camera",
+        "price" : "48,000",
+        "currency" : "INR", 
+        "image_url" : "https://github.com/Aliarshad746/Proshop/blob/master/frontend/public/images/camera.jpg?raw=true"
+    },{
+        "id" : 3,
+        "label" : "Airpods",
+        "price" : "26,000",
+        "currency" : "INR", 
+        "image_url" : "https://github.com/Aliarshad746/Proshop/blob/master/frontend/public/images/airpods.jpg?raw=true"
+    },{
+        "id" : 4,
+        "label" : "Alexa",
+        "price" : "20,000",
+        "currency" : "INR", 
+        "image_url" : "https://github.com/Aliarshad746/Proshop/blob/master/frontend/public/images/alexa.jpg?raw=true"
+    },{
+        "id" : 5,
+        "label" : "Logiteach Mouse",
+        "price" : "5,000",
+        "currency" : "INR", 
+        "image_url" : "https://github.com/Aliarshad746/Proshop/blob/master/frontend/public/images/mouse.jpg?raw=true"
+    }]
+}

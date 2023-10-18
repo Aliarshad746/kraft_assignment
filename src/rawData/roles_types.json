@@ -1,0 +1,36 @@
+{
+    "role_types": [{
+        "role" : "user",
+        "label": "User",
+        "accessibility_tabs": ["products"],
+        "accessibility_tabs_permissions" : {
+            "products" : {
+                "can_edit_products" : false
+            }
+        }
+    },{
+        "role" : "admin",
+        "label": "Admin",
+        "accessibility_tabs": ["products", "users"],
+        "accessibility_tabs_permissions" : {
+            "products" : {
+                "can_edit_products" : true
+            },
+            "users" : {
+                "can_edit_users" : false
+            }
+        }
+    },{
+        "role" : "super_admin",
+        "label" : "Super Admin",
+        "accessibility_tabs": ["products", "users"],
+        "accessibility_tabs_permissions" : {
+            "products" : {
+                "can_edit_products" : true
+            },
+            "users" : {
+                "can_edit_users" : true
+            }
+        }
+    }]
+}

@@ -1,0 +1,21 @@
+{
+    "users" : [{
+        "id" : 1,
+        "email" : "john.doe@example.com",
+        "name" : "John Doe",
+        "password" : "Pass@123",
+        "role_type" : "user"
+    },{
+        "id" : 2,
+        "email" : "jane.doe@example.com",
+        "password" : "Pass@123",
+        "name" : "Jane Doe",
+        "role_type" : "admin"
+    },{
+        "id" : 3,
+        "email" : "super@example.com",
+        "password" : "Pass@123",
+        "name" : "Super",
+        "role_type" : "super_admin"
+    }]
+}
