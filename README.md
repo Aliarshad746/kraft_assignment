@@ -1,5 +1,5 @@
 # Overview
-Live Project available [here](https://shiny-halva-6132b4.netlify.app/login)
+Live Project available [here](https://shiny-halva-6132b4.netlify.app/)
 
 ## Getting Started with Create React App
 
