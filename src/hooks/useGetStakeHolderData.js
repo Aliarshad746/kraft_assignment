@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import roleTypes from "../rawData/roles_types.json"
 import {EMPTY_ARRAY_SIZE, ERROR_USER_NOT_FOUND, STAKEHOLDER_LOCAL_STORAGE_KEY} from "../helpers/constants"
+import bcrypt from "bcryptjs";
 
 
 const useGetStakeHolderData = (users) => {
@@ -11,13 +12,22 @@ const useGetStakeHolderData = (users) => {
         const finalEmail = email?.toLowerCase();
         const finalPassword = password;
 
-        const user = users.find((item) => item?.email === finalEmail && item?.password === finalPassword)
+        const user = users.find((item) => {
+            if(item?.email !== finalEmail){
+                return false;
+            }
+            const compare = bcrypt.compareSync(finalPassword, item?.password_hash);
+            if(compare){
+                return true;
+            }
+            return false;
+        })
 
         if(user && Object.keys(user)?.length > EMPTY_ARRAY_SIZE){
                 const stakeholder_role = roleTypes?.role_types?.find((item) => user?.role_type === item?.role);
                 const stakeholderObj = {
                     email: user?.email,
-                    password: user?.password,
+                    password_hash: user?.password_hash,
                     name: user?.name,
                     ...(stakeholder_role || {})
                 }

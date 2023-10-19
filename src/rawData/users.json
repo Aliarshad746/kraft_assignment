@@ -4,16 +4,19 @@
         "email" : "john.doe@example.com",
         "name" : "John Doe",
         "password" : "Pass@123",
+        "password_hash": "$2a$10$JSTvpuSpMbKOTz4hexRRteMA0YRqRRFa5yGATS4jiK1aEoKcoHo4O",
         "role_type" : "user"
     },{
         "id" : 2,
         "email" : "jane.doe@example.com",
         "password" : "Pass@123",
+        "password_hash": "$2a$10$JSTvpuSpMbKOTz4hexRRteMA0YRqRRFa5yGATS4jiK1aEoKcoHo4O",
         "name" : "Jane Doe",
         "role_type" : "admin"
     },{
         "id" : 3,
         "email" : "super@example.com",
+        "password_hash": "$2a$10$JSTvpuSpMbKOTz4hexRRteMA0YRqRRFa5yGATS4jiK1aEoKcoHo4O",
         "password" : "Pass@123",
         "name" : "Super",
         "role_type" : "super_admin"

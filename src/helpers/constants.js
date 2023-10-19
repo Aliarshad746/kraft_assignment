@@ -6,3 +6,5 @@ export const ALL_ORDERED_DASH_TABS = [{name: "products", label : 'Products'}, {n
 
 export const ERROR_USER_NOT_FOUND = "Can't Find a user with this email and password";
 export const ERROR_PAGE_NOT_FOUND = "404 Page not found";
+
+export const SALT_ROUNDS = 10;
